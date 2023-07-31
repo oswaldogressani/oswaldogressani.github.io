@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<style>
+	
+	body {
+	   background-color:#FFF;
+	   font-family:"Times New Roman", Times, serif;
+	   padding:1em;
+	   border:solid #AAA;
+	   border-width:1px 1px 1px 1px;
+	   margin:1em auto;
+	   max-width: 55em;
+	}
+	
+.logo {
+	width: 180px;
+	height: 135px;
+	margin-bottom: -45px;
+}
+
+pre {
+ font-family: "Times New Roman", Times, serif;
+ font-size: 100%;
+}
+
+
+h2 { 
+	font-family: "Times New Roman", Times, serif;
+    font-size: 110%;
+}	
+
+h3 {
+	clear:both;
+	font-size: 1.2em;
+	margin-top:0em;
+	font-variant: petite-caps;
+	padding-left:.35em;
+	background-color:#EEE;
+	border-bottom: 1px solid #999;
+	letter-spacing: .06em;
+	}
+
+
+/* Creation of three columns */
+.column {
+ float: left; 
+ column-gap: 5px; 
+ padding: 5px;
+ height: 150px;
+ }
+	
+.column2 {
+ float: left; 
+ column-gap: 5px; 
+ padding: 5px;
+ height: 150px;
+ }
+	
+.cleft{
+ width: 28%;
+}
+
+.cmiddle, .cright{
+ width: 33%;
+}
+
+.vright {
+border-right: 1px solid gray;
+height: 120px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+	
+@media screen and (max-width: 400px) {
+	
+.column {
+ column-gap: 2px; 
+ padding-top: 15px;
+ height: 98px;
+ margin-bottom: 2px;
+ }
+		
+.cleft{
+ width: 100%;
+}
+	
+.cmiddle, .cright{
+ width: 100%;
+ margin-top: 20px;
+}
+
+.vright {
+border-right: 1px solid gray;
+height: 110px;
+}
+	
+	
+	nav ul {
+		text-align: left;
+		width: 85%;
+		margin-left: 5px;
+	}	
+
+}
+
+	
+p {
+ font-family: "Times New Roman", Times, serif;
+ font-size: 100%;
+ }
+ 
+
+  
+ div {
+	column-gap: 100px;
+ }
+ 
+ hr{
+    border: 0;
+    height: 2.5px;
+    background: #EEE;
+}
+
+a:link {
+text-decoration: none;
+}
+
+
+/*--------------------------------------------------------------------*/
+
+
+/* Navigation bar settings */
+nav {
+	background-color: darkgoldenrod; /* Background color */
+	position:static; 
+	display: block;
+	text-align: center; /* Alignment position of text */
+	width: 100%;
+	margin-top:-20px;
+}
+	
+/* Style of the list for the navigation bar */
+nav li {
+	display: inline-block; /* For horizontal navigation links */
+	margin-left: 15px;    /* Left margin in pixels */
+	margin-top: 12px; /* Leave a margin above navigation list */
+	margin-bottom: 10px;   /* Bottom margin to leave space below navigation list */
+	}
+
+		
+/* Style for the <a> tag hyperlink */
+nav a {
+	color: white;    /* Color of the hyperlink */
+	text-decoration: none; /* none means no underline */
+	font-size: 1rem; /* Font size unit in rem meaning relative to the root element */
+	text-transform: uppercase; /* Display the links in uppercase */
+	}
+
+/* When the mouse goes above the links */
+nav a:hover {
+	color: black; /* Hover color */
+	}
+
+</style>
+</head>
+
+<body> 
+	
+<header>
+	<img src="images/Abstract_Background.png" alt="Header_img" width="100%" height="150px">
+	<nav>
+		<!-- <img src="images/Smart_logo_white.png" alt="White logo" class="logo"> -->
+	  <ul>
+		<li><a href="index.html"> Home </a></li>
+		<li><a href="about_me.html"> About me </a></li>
+		<li><a href="research.html"> Research </a></li>
+	  </ul>
+	</nav>
+</header>
+
+<!-- For Dimension badge -->
+<script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"> </script>
+
+<h1 style="font-variant: petite-caps; font-size: 1.6em;"> Dr. Oswaldo Gressani  </h1>
+<hr> 
+
+<div class="row">
+  <div class="column vright cleft">
+	<center>
+		<img src="images/photo_cv.jpg" alt="CV_photo" style="width:118px;height:140px;">
+	</center> 
+  </div>
+  <div class="column vright cmiddle">
+  <h2 style="margin-top: 0px;"> Personal data  </h2>
+  <ul style="list-style : none; padding-left: 0px; text-align: left;"> 
+  <li> First name: Oswaldo </li>
+  <li> Last name:  Gressani </li>
+  <li> Date of birth:  09/06/1989 </li>
+  <li> Place of birth:  Luxembourg </li>
+  <li> Nationality: France, Luxembourg </li>
+  </ul>		
+  </div>
+  <div class="column cright">
+  <h2 style="margin-top: 0px;"> Links </h2>
+   <ul style="list-style : none; padding-left: 4px;"> 
+    <li style="margin-bottom: 3px; padding-left: 4px"> 
+		<a href="https://github.com/oswaldogressani" target="_blank"> 
+			<img src="images/Github_logo.png" alt="GithubLogo" style="padding-right: 16px; width:16px; height:16px;">
+			https://github.com/oswaldogressani 
+		</a> 
+	   </li>
+    <li style="margin-bottom: 3px; padding-left: 4px">
+		<a href="https://orcid.org/0000-0003-4152-6159" target="_blank">
+		<img src="images/ORCIDiD_icon16x16.gif" alt="OrcidLogo" style="width:16px; height:16px;"> 
+		</a>  &nbsp; &nbsp;
+		<a href="https://orcid.org/0000-0003-4152-6159" target="_blank"> 0000-0003-4152-6159 </a>
+	</li>
+	<li style="margin-bottom: 3px; padding-left: 4px">
+		<a href="https://twitter.com/OswaldoGressani" target="_blank">
+		<img src="images/Twitter_logo.png" alt="TwitterLogo" style="width:16px; height:16px;"> 
+		</a>  &nbsp; &nbsp;
+		<a href="https://twitter.com/OswaldoGressani" target="_blank"> @OswaldoGressani </a>
+	</li>
+	<li style="margin-bottom: 3px; padding-left: 4px">
+		<a href="https://epilps.com" target="_blank"> www.epilps.com </a>
+	</li>
+  </ul>		
+  </div>
+</div>
+
+<h3 style="margin-top: 1em;"> Education </h3>
+
+<ul style="list-style-position: outside; list-style: none; padding-left: 15px; text-align: left;"> 
+	<li style="margin-bottom: 2px;"> 2011 &nbsp; Bachelor in Economics, University of Luxembourg, very good. </li>
+	<li style="margin-bottom: 2px;"> 2013 &nbsp; Master in Econometrics, Université catholique de Louvain, magna cum laude. </li>
+	<li style="margin-bottom: 2px;"> 2015 &nbsp; Master in Statistics, Université catholique de Louvain, magna cum laude. </li>
+	<li style="margin-bottom: 2px;"> 2019 &nbsp; Master in Biostatistics, Université catholique de Louvain, magna cum laude. </li>
+	<li> 2020 &nbsp; PhD in Statistics, "Laplace Approximations and Bayesian P-splines for Statistical Inference", under the supervision of Prof. Dr. Philippe Lambert, Université catholique de Louvain. 
+	 <!-- Pdf download logo -->
+				<span style="font-family: Times New Roman; font-size: 90%; color:MediumSeaGreen;">
+				<a style="margin-top: 5px" href="docs/Oswaldo_PhD_eThesis_2020.pdf" target="_blank"> 
+				<img style="vertical-align:bottom; width:20px; height: 20px;" src="images/Adobe_logo.png" alt="AdobeLogo"> </a> View PhD thesis &nbsp; 
+				</span> 
+	</li>
+	<li style="margin-bottom: 2px;"> 2020- &nbsp; Postdoctoral researcher, Data Science Institute, Hasselt University. </li>
+	
+ </ul>		
+
+<h3 style="margin-top: 1.3em;"> Publications </h3>
+
+<ol style="padding-left: 15px; text-align: left;"> 
+
+	<!-- 1. CSDA paper with Philippe Lambert 2018 -->
+	<li style="margin-bottom: 25px;"> <strong> Gressani, O. </strong> and Lambert, P. (2018). Fast Bayesian inference using Laplace approximations in a flexible promotion time cure model based on P-splines. <i> Computational Statistics and Data Analysis</i>, <b>124</b>, 151-167.
+	<a href="https://doi.org/10.1016/j.csda.2018.02.007" target="_blank"> doi.org/10.1016/j.csda.2018.02.007  </a> 
+	<br>
+				
+   		<!-- Pdf download logo -->
+		<span style=" font-family: Times New Roman; font-size: 90%; vertical-align: bottom;">
+		<a href="docs/Gressani_Lambert_CSDA_2018.pdf" target="_blank"> 
+		<img style="margin-left: 0px; margin-bottom: -9px; width:20px; height: 20px;" src="images/Adobe_logo.png" alt="AdobeLogo"> </a>
+		<a style="color: MediumSeaGreen; vertical-align: bottom;"> View pdf </a>  
+		<!-- <img style=" margin-bottom: -10px; margin-left: 5px;  width: 100px; height: 30px;" alt="iThenticate logo" src="images/ithenticate_blue.jpg"> -->
+		</span> 
+		
+	 	<!-- Dimensions badge -->
+		<span style="display: inline-block; margin-left: 10px; margin-bottom: 0px;" class="__dimensions_badge_embed__" data-doi="10.1016/j.csda.2018.02.007" data-style="small_rectangle">  
+		</span>  
+				
+		<!-- R logo -->
+			<span style="font-family: Times New Roman; font-size: 95%; color:dodgerblue;">
+				<a href="docs/Laplace_Psplines_cure.txt" target="_blank"> 
+				<img style="margin-left: 10px; margin-bottom: -4px; margin-top: 2px; vertical-align:center; width: 20px; height: 18.5px;" src="images/Rlogo.png" alt="RLogo">  
+				</a> Code  
+			</span> <br>
+	</li>
+	
+	<!-- 2. CSDA paper with Philippe Lambert 2020 -->
+	<li style="margin-bottom: 10px;"> <strong> Gressani, O. </strong> and Lambert, P. (2021). Laplace approximations for fast Bayesian inference in generalized 
+			additive models based on P-splines. <i> Computational Statistics and Data Analysis</i>, <b> 154</b>, 107088. 
+			<a href="https://doi.org/10.1016/j.csda.2020.107088" target="_blank"> doi.org/10.1016/j.csda.2020.107088 </a> 
+			
+			
+			<!-- Dimensions badge -->
+			<span class="__dimensions_badge_embed__" data-doi="10.1016/j.csda.2020.107088" data-style="small_rectangle">
+			
+			 <!-- Pdf download logo -->
+				<span style="font-family: Times New Roman; font-size: 110%; color:MediumSeaGreen;">
+					<a style="margin-top: 5px" href="docs/Gressani_Lambert_CSDA_2020.pdf" target="_blank"> 
+					<img style="vertical-align:bottom; width: 20px; height: 20px;" src="images/Adobe_logo.png" alt="AdobeLogo">  
+					</a> View pdf &nbsp; 
+				</span> 
+			</span>		
+	</li>
+	
+	<!-- 3. Statistics in Medicine paper Laplace mixture cure with Christel and Niel -->
+	<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <!-- For altmetric badge -->
+	<li style="margin-bottom: 10px;"> <strong> Gressani, O.</strong>, Faes, C. and Hens, N. (2022). Laplacian-P-splines for Bayesian inference in the mixture cure model. <i>Statistics in Medicine</i>, <strong>41</strong>(14), 2602-2626. <a href="https://doi.org/10.1002/sim.9373" target="_blank"> doi.org/10.1002/sim.9373 </a> 
+	<img style="position: absolute; bottom; margin-left: 3px; margin-top: 2px; width: 11px; height: 17px;" src="images/OA_logo.png" alt="OAlogo">  
+	<!-- Dimensions badge -->
+	<span class="__dimensions_badge_embed__" data-doi="10.1002/sim.9373" data-style="small_rectangle" style="margin-top: 5px;"></span>
+	</li>
+	
+	<!-- 4. EpiLPS paper PLoS Comp Biol -->
+	<li style="margin-bottom: 10px;"> <strong> Gressani, O.</strong>, Wallinga, J., Althaus, C., Hens, N. and Faes, C. (2021). EpiLPS: A fast and flexible Bayesian tool for estimation of the time-varying reproduction number. <i> PLoS Computational Biology</i>, <b>18</b>(10): e1010618. 
+	<a href="https://doi.org/10.1371/journal.pcbi.1010618" target="_blank"> doi.org/10.1371/journal.pcbi.1010618</a>
+	<img style="position: absolute; bottom; margin-left: 3px; margin-top: 2px; width: 11px; height: 17px;" src="images/OA_logo.png" alt="OAlogo">  
+	</li> 
+	
+	<!-- 5. Paper LPS reproduction number under misreported data with Niel and Christel -->
+	<li style="margin-bottom: 10px;"> <strong> Gressani, O.</strong>, Faes, C. and Hens, N. (2022). An approximate Bayesian approach for estimation of the instantaneous reproduction number under misreported epidemic data. <i> Biometrical Journal. </i> 
+	<a href="https://doi.org/10.1002/bimj.202200024" target="_blank">  https://doi.org/10.1002/bimj.202200024 </a>
+	<img style="position: absolute; bottom; margin-left: 3px; margin-top: 2px; width: 11px; height: 17px;" src="images/OA_logo.png" alt="OAlogo">  
+	</li>
+	
+	
+	<!-- 6. BioRxiv paper Cohort-based smoothing with Yannick, Carlo, Christel and Niel -->
+	<li style="margin-bottom: 10px;"> Vandendijck, Y., <strong>Gressani, O.</strong>, Faes, C., Camarda, C.G. and Hens, N. (2022). Cohort-based smoothing methods for age-specific contact rates. <i> BioRxiv preprint. </i> 
+	<a href="https://doi.org/10.1101/290551 " target="_blank"> doi.org/10.1101/290551 </a> 	
+	</li>
+	
+	<!-- 7. MedRxiv paper with Bryan and Christel -->
+	<li style="margin-bottom: 10px;"> Sumalinab, B. <strong>Gressani, O.</strong>, Hens, N. and Faes, C. (2022). Nowcasting with Laplacian-P-splines. <i> MedRxiv preprint.</i> 
+	<a href="https://www.medrxiv.org/content/10.1101/2022.08.26.22279249v1" target="_blank"> 10.1101/2022.08.26.22279249v1 </a> 	
+	</li>
+	
+	<!-- 8. ArXiv paper with Philippe Lambert -->
+	<li style="margin-bottom: 25px;"> Lambert, P., <strong> Gressani, O. </strong> (2022). Penalty parameter selection and asymmetry corrections to Laplace approximations in Bayesian P-splines models. <i> ArXiv preprint</i>.
+	<a href="https://arxiv.org/abs/2210.01668" target="_blank"> https://arxiv.org/abs/2210.01668  </a> 
+	<br>
+	
+	
+</ol>
+
+<h3 style="margin-top: 1.5em;"> Discussion papers </h3>
+
+<ol style="padding-left: 15px; text-align: left;"> 
+    <li style="margin-bottom: 10px;"> <strong> Gressani, O. </strong> (2015).  Endogeneous Quantal Response Equilibrium for Normal Form Games. <i> CREA discussion papers, University of Luxembourg</i>.
+		<a href="https://wwwen.uni.lu/content/download/86130/1054931/file/2015_18%20Endogeneous%20Quantal%20Response%20Equilibrium%20for%20Normal%20Form%20Games.pdf" target="_blank"> 
+		wwwen.uni.lu/content/download/86130</a> 
+	</li>
+	<li> <strong> Gressani, O. </strong> and Lambert, P. (2020). The Laplace-P-spline methodology for fast approximate Bayesian inference in additive partial linear models. 
+		<i> ISBA Discussion papers, Université catholique de Louvain</i>. <a href="http://hdl.handle.net/2078.1/230728" target="_blank"> hdl.handle.net/2078.1/230728 </a> 
+	</li>
+</ol>
+
+<h3 style="margin-top: 1.5em;"> Software </h3>
+
+<ol style="padding-left: 15px; text-align: left;"> 
+	<li style="margin-bottom: 8px;"> <strong> Gressani, O. </strong> and Lambert, P. (2020). The blapsr package for fast inference in latent Gaussian models by combining Laplace approximations and P-splines. <i> CRAN</i>.
+	<a href="https://CRAN.R-project.org/package=blapsr" target="_blank"> CRAN.R-project.org/package=blapsr </a>
+	</li>
+	<li style="margin-bottom: 8px"> <strong> Gressani, O.</strong> (2021). A package for approximate Bayesian inference in mixture cure models with Laplacian-P-splines (Version 1.1.2). <a href="https://github.com/oswaldogressani/mixcurelps" target="_blank">
+    https://github.com/oswaldogressani/mixcurelps</a>
+	</li>
+	<li> <strong> Gressani, O.</strong> (2021). EpiLPS: A Bayesian Tool for Near Real-Time Estimation of the Reproduction Number. <i> CRAN</i>. <a href="https://cran.r-project.org/package=EpiLPS" target="_blank">
+    https://cran.r-project.org/package=EpiLPS </a>
+	</li>
+</ol> 
+
+<h3 style="margin-top: 1.5em;"> Conferences and Visits </h3>
+
+<ol style="padding-left: 15px; text-align: left; line-height: 120%;">
+	<li style="margin-bottom: 10px;"> 
+	16th Annual Conference of Public Economic Theory, Luxembourg, 02-04 July 2015: 'Endogeneous Quantal Response Equilibrium in Normal Form Games' (Contributed talk).
+	</li>
+	<li style="margin-bottom: 10px;">
+	37th Annual Conference of the International Society for Clinical Biostatistics; Birmingham (UK), 21-25 August 2016: 'Approximate Bayesian methods in cure survival
+	models: Coupling P-splines with Laplace approximations for fast inference' (Contributed talk).
+	</li>
+	<li style="margin-bottom: 10px;">
+	Visiting researcher at Basque Center for Applied Mathematics (BCAM); Bilbao (Spain), 10-13 December 2017.
+	</li>
+	<li style="margin-bottom: 10px;">
+	Survival Analysis for Junior Researchers (SAfJR) conference, Leiden (The Netherlands), 24-26 April 2018: 'P-splines and Laplace approximations for fast Bayesian 
+	inference in a flexible promotion time cure model' (Poster presentation).
+	</li>
+	<li style="margin-bottom: 10px;">
+	International Society for Bayesian Analysis (ISBA) World Meeting, Edinburgh (UK), 24-29 June 2018: 'Merging Markov chain Monte Carlo with Laplace approximations 
+	for fast inference in Generalized additive models' (Poster presentation).
+	</li>
+	<li style="margin-bottom: 10px;">
+	26th Annual Meeting of the Royal Statistical Society of Belgium (RSSB), Ovifat (Belgium), 17-19 October 2018: 'Bridging the gap between Bayesian P-splines and 
+	Laplace’s method for inference in Generalized additive models' (Contributed talk).
+	</li>
+	<li style="margin-bottom: 10px;">
+	40th Annual Conference of the International Society for Clinical Biostatistics (ISCB), Leuven (Belgium), 14-18 July 2019: 'Unifying Laplace’s method and Bayesian 
+	penalized regression splines for estimation in generalized additive models' (Contributed talk).
+	</li>
+	<li style="margin-bottom: 10px;">
+	Invited talk at the Statistics Seminar of the Institut de Mathématiques de Marseille I2M (France), 7 December 2020: 'Laplace-P-splines for approximate Bayesian 
+	inference'.
+	</li>
+	<li style="margin-bottom: 10px;">
+	42nd Annual Conference of the International Society for Clinical Biostatistics (ISCB), Lyon (France), 18-22 July 2021: 'Laplace approximations for fast Bayesian inference of the time-varying reproduction number under misreported epidemic data' (Contributed talk).
+	</li>
+	<li style="margin-bottom: 10px;">
+	28th Annual Meeting of the Royal Statistical Society of Belgium (RSSB), Liège (Belgium), 21-22 October 2021: 'The EpiLPS project: a new Bayesian tool for estimating the time-varying reproduction number' (Contributed talk). Slides: 
+	<a href="https://github.com/oswaldogressani/RSSB2021_Beamer" target="_blank"> Github/oswaldogressani/EpiLPS </a>
+	</li>
+	<li style="margin-bottom: 10px;">
+	Data Science Institute (DSI) Seminar, Hasselt University, (Belgium), 22 June 2022: 'The power of Laplacian-P-splines'. 
+	</li>
+	<li style="margin-bottom: 10px;">
+	36th International Workshop on Statistical Modelling (IWSM), Trieste (Italy), 18-22 July 2022: 'The power of Laplacian-P-splines for inference in epidemiological and survival models' (Contributed talk).</li>
+	<li style="margin-botoom: 10px;">
+	Invited talk at the seminar organized by the Center for Computational and Stochastic mathematics (CEMAT) and the Center for Statistics (CEAUL), University of Lisbon, 12 October 2022: 'Approximate inference with Bayesian P-splines in epidemic models'.
+	</li>
+	<li style="margin-bottom: 10px; margin-top: 10px;">
+	Visiting researcher at Basque Center for Applied Mathematics (BCAM); Bilbao (Spain), 27-30 November 2022.
+	</li>
+	<li style="margin-bottom: 10px;">
+	International Conference on Computational and Financial Econometrics (CFE) & Computational and Methodological Statistics (CMStatistics), King's College London (UK), 17-19 December 2022: 'Approximate Bayesian inference in epidemic models: A focus on nowcasting and the time-varying reproduction number' (Contributed talk).</li>
+</ol>
+
+<h3 style="margin-top: 1.5em;"> Awards and Honors </h3>
+
+<ul style="list-style : none; padding-left: 15px; text-align: left;"> 
+	<li style="margin-bottom: 2px;"> 2014-2015 &nbsp; AFR grant from the National Research Fund Luxembourg. </li>
+	<li style="margin-bottom: 2px;"> 2014-2015 &nbsp; Top of the class in the research Master in Statistics (Université catholique de Louvain). </li>
+	<li> 2015-2016 &nbsp; Coordinated Research projects grant (ARC), Belgium. </li>
+</ul>		
+
+<div class="row">
+  <div class="column2 cleft;">
+	<h3 style="margin-top: 0.5em;"> Languages </h3>
+	<ul style="list-style : none; padding-left: 15px; text-align: left;"> 
+		<li style="margin-bottom: 2px;"> French  (native). </li>
+		<li style="margin-bottom: 2px;"> English (fluent). </li>
+		<li style="margin-bottom: 2px;"> Luxembourgish (fluent). </li>
+		<li style="margin-bottom: 2px;"> German (basic). </li>
+		<li> Italian (basic). </li>
+	</ul>	
+  </div>
+  <div class="column2 cmiddle">
+	<h3 style="margin-top: 0.5em;"> Software skills </h3>
+	<ul style="list-style : none; padding-left: 15px; text-align: left;"> 
+		<li style="margin-bottom: 2px;"> R  (strong). </li>
+		<li style="margin-bottom: 2px;"> Matlab (strong). </li>
+		<li style="margin-bottom: 2px;"> JMP (strong). </li>
+		<li style="margin-bottom: 2px;"> SAS (medium). </li>
+		<li style="margin-bottom: 2px;"> Python (basic). </li>
+	</ul>	
+  </div>
+  <div class="column2 cright; ">
+   <h3 style="margin-top: 0.5em;"> Interests </h3>
+   <ul style="list-style : none; padding-left: 15px; text-align: left;"> 
+		<li style="margin-bottom: 2px;"> Running (Marathon or half marathon). </li>
+		<li style="margin-bottom: 2px;"> Video Games.</li>
+	</ul>	
+  </div>
+</div>
+
+<!-- Footer -->	
+<footer style="margin-top: 135px;">
+<p style="text-align: center; font-size: 90%"> © Oswaldo Gressani 2021-2022 </p>
+</footer>
+
+</body>
+</html>
