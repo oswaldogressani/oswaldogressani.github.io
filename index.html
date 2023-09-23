@@ -1,72 +1,358 @@
 <!DOCTYPE html>
+
 <html>
-	
 
 <head>
-	<title> Oswaldo Gressani Website </title>	
-	<link href="css/css_style1.css" type="text/css" rel="stylesheet" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
-</head>	
-	
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title> </title>
+
+<script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="favicon.ico"/>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
 
 <body>
-	
 
-<header>
-  <img src="images/Desert.jpeg" alt="Header_img" width="100%" height="100px">
-  <nav>
-		<!-- <img src="images/Smart_logo_white.png" alt="White logo" class="logo"> -->
-	  <ul>
-		<li><a href="index.html"> Home </a></li>
-		<li><a href="about_me.html"> About me </a></li>
-	  </ul>
-	</nav>
-</header>
 
-	
-<!-- Main body -->
-<article>
-	
-<h1> Welcome! </h1>
-<hr>
+<div class="container-fluid main-container">
 
-<p style="margin-bottom: 35px;"> 
-  Heartily welcome on my website, a platform designed to share ideas, knowledge and more! I have always thought of science as being a kind of universe 
-  in which planets play the role of scientific fields. From this metaphorical perspective one could think of our minds being the main actors, 
-  trying to grasp the complexity of our surroundings and conquer the mysteries of science with spacecrafts named Logic, Hypotheses and Determination. 
-  State-of-the art science has brought the knowledge levels in technology, medicine, physics and many other disciplines to unprecedented heights and yet 
-  a plethora of facets still wait to be discovered.&nbsp; As Einstein put it: "intellectual growth should commence at birth and cease only at death", so let your beautiful mind
-  dive deep into this universe to explore new horizons.</p>	
 
-<h1> My scientific journey so far </h1>
-<hr>
-	
-<p style="margin-bottom: 35px;">
-‘‘I have always been fascinated by science for the simple reason that it has enlightened humans for millennia and will challenge the yet unborn generations 
-for future breakthroughs in the quest for understanding and explaining a mysteriously complex universe.’’
 
- 
 
-My scientific journey started in 2008 at the University of Luxembourg during a three year Bachelor program in Economics with a couple of months spent at 
-Université Paris II (Panthéon-Assas) in the framework of the Erasmus exchange program. Afterwards, I moved to Belgium and graduated from the Université
- catholique de Louvain with three Master's degrees: Econometrics (2013), Statistics (2015) and Biostatistics (2019). In 2020, I obtained a PhD of
- Science (Statistics) from the Université catholique de Louvain. I am currently a postdoctoral researcher at the Data Science Institute of Hasselt University.
-</p>
-	
-<h1> Research interests </h1>
-<hr>
-	
-<p style="margin-bottom: 35px;">
-I am particularly interested in Bayesian Statistics, Functional Data Analysis, Computational Methods in Statistics and Survival Models. As an R enthusiast, I developed a package during my doctoral thesis focused on approximate Bayesian methods. It can be used to fit survival models and (generalized) additive models in a Bayesian framework by combining penalized regression splines (P-splines) and Laplace approximations. More information on this project can be found at <a href="https://www.blapsr-project.org/" target="_blank"> www.blapsr-project.org </a>. The software can be downloaded on <a href="https://CRAN.R-project.org/package=blapsr" target="_blank"> CRAN </a> or on my  <a href="https://github.com/oswaldogressani/blapsr" target="_blank"> Github </a> page .
-</p>
-	
-</article>
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Home
+  </a>
+</li>
+<li>
+  <a href="CV.html">CV</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/oswaldogressani">
+    <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/OswaldoGressani">
+    <span class="fa fa-twitter"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://epilps.com/">
+    <span class="fa fa-code"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
 
-	
-<!-- Footer -->
-<footer style="margin-top: 135px;">
-<p style="text-align: center; font-size: 90%"> © Oswaldo Gressani 2021-2023. All rights reserved. </p>
-</footer>
-	
-</body>	
+<div id="header">
+
+
+
+<h1 class="title toc-ignore"> </h1>
+
+</div>
+
+
+<p><img src="photo_cv.jpg" width="20%" style="display: block; margin: auto;" /></p>
+<p><br></p>
+<p>I’m a postdoctoral researcher at the <a
+href="https://www.uhasselt.be/en/instituten-en/dsi"><ins>Data Science
+Institute</ins></a> of Hasselt University since December 2020. I did a
+PhD in Statistics at the University of Louvain under the supervision of
+<a href="http://www.statsoc.ulg.ac.be/"><ins>Prof. Philippe
+Lambert</ins></a>.</p>
+<p>My area of research focuses on Bayesian Statistics. In particular, I
+develop approximate Bayesian methods that permit fast sampling-free
+inference schemes and explore how such methods can be used to improve
+the efficiency of Markov chain Monte Carlo algorithms.</p>
+<p>Currently, I am working on new Bayesian methodologies for fast and
+flexible inference in infectious disease models. I love coding in
+general and developed several <a
+href="https://github.com/oswaldogressani"><ins>R packages</ins></a>. One
+of my latest project is the EpiLPS package (<a
+href="https://epilps.com/" class="uri">https://epilps.com/</a>), a tool
+to estimate key epidemiologic parameters.</p>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
 </html>

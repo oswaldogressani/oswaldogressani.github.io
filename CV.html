@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Curriculum vitae</title>
+
+<script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="favicon.ico"/>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Home
+  </a>
+</li>
+<li>
+  <a href="CV.html">CV</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/oswaldogressani">
+    <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/OswaldoGressani">
+    <span class="fa fa-twitter"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://epilps.com/">
+    <span class="fa fa-code"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Curriculum vitae</h1>
+
+</div>
+
+
+<style type="text/css">
+.color-bar {
+  background-color: #008BFF;
+  border: 0px solid #004EFF;
+  color: white;
+  padding: 0px;
+}
+</style>
+<!-- Education -->
+<div class="color-bar">
+<h3 style="margin-left: 20px";> Education </h3>
+</div>
+<ul>
+<li>
+2011 Bachelor in Economics, University of Luxembourg, very good.
+</li>
+<li>
+2013 Master in Econometrics, University of Louvain, magna cum laude.
+</li>
+<li>
+2015 Master in Statistics, University of Louvain, magna cum laude.
+</li>
+<li>
+2019 Master in Biostatistics, University of Louvain, magna cum laude.
+</li>
+<li>
+2020 PhD in Statistics, “Laplace Approximations and Bayesian P-splines
+for Statistical Inference”, under the supervision of Prof. Philippe
+Lambert, University of Louvain <a
+href="Oswaldo_PhD_eThesis_2020.pdf"><ins>PhD-thesis</ins></a>.
+</li>
+<li>
+2020- Postdoctoral researcher, Data Science Institute, Hasselt
+University.
+</li>
+</ul>
+<!-- Research -->
+<div class="color-bar">
+<h3 style="margin-left: 20px";> Research </h3>
+</div>
+<!-- Paper 1 -->
+<p style="margin-top: 15px";> 
+1. <b>Gressani, O.</b> and Lambert, P. (2018). Fast Bayesian inference using Laplace approximations in a flexible promotion time cure model based on P-splines. <i>Computational Statistics and Data Analysis</i>, <b>124</b>, 151-167.<br>
+<a href="https://doi.org/10.1016/j.csda.2018.02.007">doi.org/10.1016/j.csda.2018.02.007</a>
+<br>
+<!-- Dimensions citation badge -->
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.csda.2018.02.007" data-style="small_rectangle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+</p>
+<!-- Paper 2 -->
+<p style="margin-top: 15px";> 
+2. <b>Gressani, O.</b> and Lambert, P. (2021). Laplace approximations for fast Bayesian inference in generalized additive models based on P-splines. <i>Computational Statistics and Data Analysis</i>, <b>154</b>, 107088.<br>
+<a href="https://doi.org/10.1016/j.csda.2020.107088">doi.org/10.1016/j.csda.2020.107088</a>
+<!-- Dimensions citation badge -->
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.csda.2020.107088" data-style="small_rectangle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+</p>
+<!-- Paper 3 -->
+<p style="margin-top: 15px";> 
+3. <b>Gressani, O.</b>, Faes, C. and Hens, N. (2022). Laplacian-P-splines for Bayesian inference in the mixture cure model. <i>Statistics in Medicine</i>, <b>41</b>(14), 2602-2626.<br>
+<a href="https://doi.org/10.1002/sim.9373">doi.org/10.1002/sim.9373</a>
+<!-- Dimensions citation badge -->
+<span class="__dimensions_badge_embed__" data-doi="10.1002/sim.9373" data-style="small_rectangle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+</p>
+<!-- Paper 4 -->
+<p style="margin-top: 15px";>
+4. <b>Gressani, O.</b>, Wallinga, J., Althaus, C., Hens, N. and Faes, C. (2022). EpiLPS: A fast and flexible Bayesian tool for estimation of the time-varying reproduction number. <i>PLoS Computational Biology</i>, <b>18</b>(10): e1010618.<br>
+<a href="https://doi.org/10.1371/journal.pcbi.1010618">doi.org/10.1371/journal.pcbi.1010618</a>
+<!-- Dimensions citation badge -->
+<span class="__dimensions_badge_embed__" data-doi="10.1371/journal.pcbi.1010618" data-style="small_rectangle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+</p>
+<!-- Paper 5 -->
+<p style="margin-top: 15px";>
+5. <b>Gressani, O.</b>, Faes, C. and Hens, N. (2023). An approximate Bayesian approach for estimation of the instantaneous reproduction number under misreported epidemic data. <i>Biometrical Journal</i>, <b>65</b>(6): 2200024.<br>
+<a href="https://doi.org/10.1002/bimj.202200024">doi.org/10.1002/bimj.202200024</a>
+<!-- Dimensions citation badge -->
+<span class="__dimensions_badge_embed__" data-doi="10.1002/bimj.202200024" data-style="small_rectangle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+</p>
+<!-- Paper 6 -->
+<p style="margin-top: 15px";>
+6. Vandendijck, Y., <b>Gressani, O.</b>, Faes, C., Camarda, C.G. and Hens, N. (2023). Cohort-based smoothing methods for age-specific contact rates. (2023) <i>Biostatistics</i>.<br>
+<a href="https://doi.org/10.1093/biostatistics/kxad005">doi.org/10.1093/biostatistics/kxad005</a>
+<!-- Dimensions citation badge -->
+<span class="__dimensions_badge_embed__" data-doi="10.1093/biostatistics/kxad005" data-style="small_rectangle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+</p>
+<!-- Paper 7 -->
+<p style="margin-top: 15px";>
+7. Lambert, P., <b>Gressani, O.</b> (2023). Penalty parameter selection and asymmetry corrections to Laplace approximations in Bayesian P-splines models. <i>Statistical Modelling</i>.<br>
+<a href="https://doi.org/10.1177/1471082X231181173">doi.org/10.1177/1471082X231181173</a>
+<!-- Dimensions citation badge -->
+<span class="__dimensions_badge_embed__" data-doi="10.1177/1471082X231181173" data-style="small_rectangle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+</p>
+<!-- Paper 8 -->
+<p style="margin-top: 15px";>
+8. Sumalinab, B. <b>Gressani, O.</b>, Hens, N. and Faes, C. (2023). Bayesian nowcasting with Laplacian-P-splines. <i>MedRxiv preprint</i>.<br>
+<a href="https://www.medrxiv.org/content/10.1101/2022.08.26.22279249v2">10.1101/2022.08.26.22279249v2</a>
+</p>
+<!-- Paper 9 -->
+<p style="margin-top: 15px";>
+9. <b>Gressani, O.</b>, Torneri, A., Hens, N. and Faes, C. (2023). Flexible Bayesian estimation of incubation times. <i>MedRxiv preprint</i>. 
+<a href="https://doi.org/10.1101/2023.08.07.23293752">10.1101/2023.08.07.23293752</a>
+</p>
+<!-- Software -->
+<div class="color-bar">
+<h3 style="margin-left: 15px";> Software </h3>
+</div>
+<p style="margin-top: 15px";>
+1. <b>Gressani, O.</b> and Lambert, P. (2020). The blapsr package for fast inference in latent Gaussian models by combining Laplace approximations and P-splines. CRAN. 
+<a href="https://cran.r-project.org/package=blapsr">https://cran.r-project.org/package=blapsr</a>
+</p>
+<p style="margin-top: 15px";>
+2. <b>Gressani, O.</b> (2021). A package for approximate Bayesian inference in mixture cure models with Laplacian-P-splines.
+<a href="https://github.com/oswaldogressani/mixcurelps">https://github.com/oswaldogressani/mixcurelps</a>
+</p>
+<p style="margin-top: 15px";>
+3. <b>Gressani, O.</b> (2021). EpiLPS: A fast and flexible Bayesian tool for estimating epidemiological parameters. CRAN.
+<a href="https://cran.r-project.org/package=EpiLPS">  https://cran.r-project.org/package=EpiLPS </a>
+</p>
+<div class="color-bar">
+<h3 style="margin-left: 20px";> Conferences and Visits </h3>
+</div>
+<p style="margin-top: 2px";>
+1. 16th Annual Conference of Public Economic Theory, Luxembourg, 02-04 July 2015: 'Endogeneous Quantal Response Equilibrium in Normal Form Games' (Contributed talk).
+</p>
+<p style="margin-top: 2px";>
+2. 37th Annual Conference of the International Society for Clinical Biostatistics; Birmingham (UK), 21-25 August 2016: 'Approximate Bayesian methods in cure survival models: Coupling P-splines with Laplace approximations for fast inference' (Contributed talk).
+</p>
+<p style="margin-top: 2px";>
+3. Visiting researcher at Basque Center for Applied Mathematics (BCAM); Bilbao (Spain), 10-13 December 2017.
+</p>
+<p style="margin-top: 2px";>
+4. Survival Analysis for Junior Researchers (SAfJR) conference, Leiden (The Netherlands), 24-26 April 2018: 'P-splines and Laplace approximations for fast Bayesian inference in a flexible promotion time cure model' (Poster presentation).
+</p>
+<p style="margin-top: 2px";>
+5. International Society for Bayesian Analysis (ISBA) World Meeting, Edinburgh (UK), 24-29 June 2018: 'Merging Markov chain Monte Carlo with Laplace approximations for fast inference in Generalized additive models' (Poster presentation).
+</p>
+<p style="margin-top: 2px";>
+6. 26th Annual Meeting of the Royal Statistical Society of Belgium (RSSB), Ovifat (Belgium), 17-19 October 2018: 'Bridging the gap between Bayesian P-splines and Laplace’s method for inference in Generalized additive models' (Contributed talk).
+</p>
+<p style="margin-top: 2px";>
+7. 40th Annual Conference of the International Society for Clinical Biostatistics (ISCB), Leuven (Belgium), 14-18 July 2019: 'Unifying Laplace’s method and Bayesian penalized regression splines for estimation in generalized additive models' (Contributed talk).
+</p>
+<p style="margin-top: 2px";>
+8. Invited talk at the Statistics Seminar of the Institut de Mathématiques de Marseille I2M (France), 7 December 2020: 'Laplace-P-splines for approximate Bayesian inference'.
+</p>
+<p style="margin-top: 2px";>
+9. 42nd Annual Conference of the International Society for Clinical Biostatistics (ISCB), Lyon (France), 18-22 July 2021: 'Laplace approximations for fast Bayesian inference of the time-varying reproduction number under misreported epidemic data' (Contributed talk).
+</p>
+<p style="margin-top: 2px";>
+10. 28th Annual Meeting of the Royal Statistical Society of Belgium (RSSB), Liège (Belgium), 21-22 October 2021: 'The EpiLPS project: a new Bayesian tool for estimating the time-varying reproduction number' (Contributed talk).
+</p>
+<p style="margin-top: 2px";>
+11. Data Science Institute (DSI) Seminar, Hasselt University, (Belgium), 22 June 2022: 'The power of Laplacian-P-splines'.
+</p>
+<p style="margin-top: 2px";>
+12. 36th International Workshop on Statistical Modelling (IWSM), Trieste (Italy), 18-22 July 2022: 'The power of Laplacian-P-splines for inference in epidemiological and survival models' (Contributed talk).
+</p>
+<p style="margin-top: 2px";>
+13. Invited talk at the seminar organized by the Center for Computational and Stochastic mathematics (CEMAT) and the Center for Statistics (CEAUL), University of Lisbon, 12 October 2022: 'Approximate inference with Bayesian P-splines in epidemic models'.
+</p>
+<p style="margin-top: 2px";>
+14. Visiting researcher at Basque Center for Applied Mathematics (BCAM); Bilbao (Spain), 27-30 November 2022.
+</p>
+<p style="margin-top: 2px";>
+15. International Conference on Computational and Financial Econometrics (CFE) & Computational and Methodological Statistics (CMStatistics), King's College London (UK), 17-19 December 2022: 'Approximate Bayesian inference in epidemic models: A focus on nowcasting and the time-varying reproduction number' (Contributed talk).
+</p>
+<div class="color-bar">
+<h3 style="margin-left: 20px";> Awards and Honors </h3>
+</div>
+<ul>
+<li>
+2014-2015 AFR grant from the National Research Fund Luxembourg.
+</li>
+<li>
+2014-2015 Top of the class in the research Master in Statistics
+(University of Louvain).
+</li>
+</ul>
+<!-- Activities -->
+<div class="color-bar">
+<h3 style="margin-left: 20px";> Activities </h3>
+</div>
+<p><b> Reviewed </b> for the following journals:</p>
+<ul>
+<li>
+AStA Advances in Statistical Analysis
+<a href="https://www.springer.com/journal/10182">
+https://www.springer.com/journal/10182</a>.
+</li>
+<li>
+Epidemics
+<a href="https://www.sciencedirect.com/journal/epidemics">https://www.sciencedirect.com/journal/epidemics</a>.
+</li>
+<li>
+Journal of Applied Statistics
+<a href="https://www.tandfonline.com/journals/cjas20">
+https://www.tandfonline.com/journals/cjas20 </a>.
+</li>
+<li>
+PLoS Computational Biology
+<a href="https://journals.plos.org/ploscompbiol/">
+https://journals.plos.org/ploscompbiol/</a>.
+</li>
+<li>
+Scientific Reports <a href="https://www.nature.com/srep/">
+https://www.nature.com/srep/</a>.
+</li>
+<li>
+Statistical Modelling <a href="https://journals.sagepub.com/home/smj">
+https://journals.sagepub.com/home/smj</a>.
+</li>
+</ul>
+<p style="margin-top: 15px";>
+<b> Teaching </b> Bayesian Data Analysis II at Hasselt University.
+</p>
+<p style="margin-top: 15px";>
+<b> Supervising</b> PhD thesis of Bryan Sumalinab (UHasselt): "Laplace approximations for modeling epidemic data".
+</p>
+<p><br> <br></p>
+<p style="text-align: center;">
+© Oswaldo Gressani 2021-2023. All rights reserved.
+</p>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
